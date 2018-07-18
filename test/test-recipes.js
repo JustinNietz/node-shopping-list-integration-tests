@@ -69,7 +69,7 @@ describe("Recipes", function() {
     const newItem = { name: "coffee", ingredients: ['grounded coffee', 'hot water']};
     return chai
       .request(app)
-      .post("/shopping-list")
+      .post("/recipes")
       .send(newItem)
       .then(function(res) {
         expect(res).to.have.status(201);
@@ -122,10 +122,7 @@ describe("Recipes", function() {
         // prove that the PUT request has right status code
         // and returns updated item
         .then(function(res) {
-          expect(res).to.have.status(200);
-          expect(res).to.be.json;
-          expect(res.body).to.be.a("object");
-          expect(res.body).to.deep.equal(updateData);
+          expect(res).to.have.status(204);
         })
     );
   });
@@ -150,3 +147,4 @@ describe("Recipes", function() {
     );
   });
 });
+

@@ -69,7 +69,7 @@ describe("Recipes", function() {
     const newItem = { name: "coffee", ingredients: ['grounded coffee', 'hot water']};
     return chai
       .request(app)
-      .post("/shopping-list")
+      .post("/recipes")
       .send(newItem)
       .then(function(res) {
         expect(res).to.have.status(201);
@@ -150,3 +150,4 @@ describe("Recipes", function() {
     );
   });
 });
+

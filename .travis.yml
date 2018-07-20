@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy: warm-castle-35534
+  provider: heroku
+  api_key:
+    secure: r2/iUvnJSyX+FGH/+B46G5jxc0NhIZfovYAqyxFKPBAJqGtHEABxLSr7v7l+ym8JdEBNHp4oABLrGCHSMZy1oyneqYiN7P7sZDIhu1qDcZnDDI/KnLwYW/xZUiSYg9QS0ydP8Z10+pAMdSZZOgJxIiloeihTidHMqJE99ILZF2//FKH6Ej9ticjA8p25wl7w5D3sEI+59c5rRsGAs7emDGlkdhC8qx0QHqtiH0T2UD+wtxoYdZRX1g8m8Tc6wAeBwLhnjY0qbBlIwQixWpvMm/PaAaqu67ghERryXQkOYLhgrfFlHiE9P9uM/bHD9rAtgUPPsLDV3R1N4LtJ7LFpGfpc5qg0GMKy1LzqqXQi6g1rhF7im++pUDHAe9f6lmoiFHaT37OZO9KFUuLejHqrioIHtD+QEio3R4JfiUSD8EL0Vh523oTYj+ak9gd71TnC6VCOsxO68ib2EVNF53+5KLFs7loT3fmvp804NBWgm3A4TZxPOTDnOX8xGmOiPSi5Gmi2ya/kncAfaR4yI7IfwcKUJKFCIlnOpR6ASSp8rQQLDKw/j1nYvcWfrAwY2w0d0v66MEiCwwXinFdsgdHDiXoAuCfNh3wdSX/UHDeqRlOLk8mK5/LZwYyfPqITRl0Vx+DYZl19BjWOQQ2cCwR6ybIlSlQDgTFVgbEYYOkXOJo=
+  app: node-shopping-list-integration-tests
+  on:
+    repo: JustinNietz/node-shopping-list-integration-tests
